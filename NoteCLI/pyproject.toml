@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "todo"
+version = "0.1.0"
+description = "This is My frist To-Do CLI with Rich"
+authors = ["Youssef Mahfoudh <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.2.1"
+pytest = "^8.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+Todo = "Todo:todo"
